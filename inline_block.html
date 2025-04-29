@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>인라인과 블록 방식으로 디스플레이</title>
+    <style>
+        ul {
+        list-style-type: none ;
+        }
+
+        #menu {
+            font-family: "맑은 고딕";
+            width: 1600px;
+            padding: 10px;
+            margin: 20px 0 0 20px;
+            background-color: #eeeeee;
+            border: solid 1px #aaaaaa;
+            text-align: center;
+        }
+
+        #menu li{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <ul id="menu">
+        <li><a href="index.html">드론라이트쇼 소개 페이지</a> : </li>
+        <li><a href="book_banner1.html">마진과 패딩 기본값 이용</a> : </li>
+        <li><a href="book_banner3.html">마진과 패딩 초기화 후 지정</a> : </li>
+        <li><a href="inline_block.html">인라인과 블록 방식으로 디스플레이</a> : </li>
+        <li><a href="h_menu.html">메뉴를 수평 방향으로 나열</a> : </li>
+        <li><a href="v_menu.html">메뉴를 수직 방향으로 나열</a> : </li>
+        <li><a href="boxes.html">인라인과 블록 특성 모두 갖게 하기</a></li>
+    </ul>
+
+    <h2>인라인과 블록</h2>
+
+    <h3>1. 인라인 요소</h3>
+    <span>텍스트1</span>
+    <span>텍스트2</span>
+    <span>텍스트3</span>
+    <img src="img/image1.jpg">
+    <img src="img/image2.jpg">
+
+    <h3>1. 블록 요소</h3>
+    <p>이것은 단락입니다.</p>
+    <div>박스 1</div>
+    <div>박스 2</div>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>웹 프로그래밍 7주차 과제</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin-left: 10px;
+        }
+        
+        h2, h3{
+            margin: 10px 0 0 20px;
+        }
+        
+        ul {
+            list-style-type: none ;
+        }
+
+        #menu {
+            font-family: "맑은 고딕";
+            width: 1600px;
+            padding: 10px;
+            margin: 20px 0 0 20px;
+            background-color: #eeeeee;
+            border: solid 1px #aaaaaa;
+            text-align: center;
+        }
+
+        #menu li{
+            display: inline;
+        }   
+
+        ul.item {
+            list-style-type: none;
+            display: inline-block;
+            margin: 20px 0 0 20px;
+        }
+
+        .subject {
+            font-size: 1.17em;
+            border-top: solid 2px #cccccc;;
+            font-weight: bold;
+            text-align: center;
+            margin: 10px 0 0 10px;
+        }
+
+        .comment {
+            color:#ff0000;
+            text-align: center;
+            font-size: 1.10em;
+            margin: 20px 0 0 20px;
+        }
+
+        .box {
+            display: inline-block;
+            text-align: center;
+            width: 100px;
+            height: 75px;
+            margin: 30px 0 0 30px;
+            padding-top: 15px;
+            border: solid 3px #0003DF;
+            font-size: 1.17em;
+            font-weight: bold;
+        }
+
+        .img_margin {
+            margin: 20px 0 0 10px;
+        }
+
+        #title_info {
+            width: 750px;
+            padding-bottom: 5px;
+            border-bottom: solid 1px #cccccc;
+
+        }
+
+        .dron_icon {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .dron_icon li::before {
+            content: "🛸";
+            margin: 10px 0 0 10px;
+        }
+
+        #introduce {
+            width: 700px;
+            margin: 10px 0 0 20px;
+            padding: 10px;
+            border: solid 1px #0003DF;
+            background-color: #81A0F7;
+        }
+    </style>
+</head>
+<body>
+    <ul id="menu">
+        <li><a href="index.html">드론라이트쇼 소개 페이지</a> : </li>
+        <li><a href="book_banner1.html">마진과 패딩 기본값 이용</a> : </li>
+        <li><a href="book_banner3.html">마진과 패딩 초기화 후 지정</a> : </li>
+        <li><a href="inline_block.html">인라인과 블록 방식으로 디스플레이</a> : </li>
+        <li><a href="h_menu.html">메뉴를 수평 방향으로 나열</a> : </li>
+        <li><a href="v_menu.html">메뉴를 수직 방향으로 나열</a> : </li>
+        <li><a href="boxes.html">인라인과 블록 특성 모두 갖게 하기</a></li>
+    </ul>
+
+
+    <div class="img_margin">
+        <img src = "img/main_image.jpg" width="1200">
+    </div>
+
+
+    <h1 id="title_info">+ 2025 한강 불빛공연 드론라이트쇼</h1>
+
+    <h2>1. 드론라이트쇼 소개</h2>
+    <h3>Fly with Soul Shine in Seoul</h3>
+    <p id="introduce">
+        한강의 야경과 드론이 어우러져 빛으로 살아나는 디지털 감성 문화도시, 서울!
+        2025 한강 불빛 공연(드론 라이트 쇼)가 봄, 가을 시즌 정례화로 4월부터 여러분을 찾아갑니다.
+        1,200대부터 2,000대까지의 대규모 드론 라이트 쇼와 문화예술공연 등 다양한 프로그램으로 
+        서울한강공원을 찾아와 주시는 모든 분들에게 잊지 못할 추억을 선사할 것입니다.
+    </p>
+
+
+    <h2>2. 공연 일정</h2>
+    <ul class="dron_icon">
+        <li>일정 : 4월 19일 ~ 5월 25일</li>
+        <li>장소 : 뚝섬 한강공원</li>
+    </ul>
+    <div class="box">1회차 <br> 4월 19일</div>
+    <div class="box">2회차 <br> 4월 27일</div>
+    <div class="box">3회차 <br> 5월 5일</div>
+    <div class="box">4회차 <br> 5월 11일</div>
+    <div class="box">5회차 <br> 5월 25일</div>
+
+
+    <h2>3. 지난 회차 공연</h2>
+    <ul class="item">
+        <li><img src="img/24_1st.jpg" width="300" height="250"></li>
+        <li class="subject">24년도 상반기 1회차</li>
+        <li class="comment">빛으로 이루어진 하프의 선율</li>
+    </ul>
+
+    <ul class="item">
+        <li><img src="img/24_2nd.jpg" width="300" height="250"></li>
+        <li class="subject">24년도 상반기 2회차</li>
+        <li class="comment">빛으로 이루어진 애니메이션 캐릭터</li>
+    </ul>
+
+    <ul class="item">
+        <li><img src="img/24_3rd.jpg" width="300" height="250"></li>
+        <li class="subject">24년도 상반기 3회차</li>
+        <li class="comment">서울을 내려다보는 눈</li>
+    </ul>
+
+
+    <h2>4. 공연 장소</h2>
+    <ul class="dron_icon">
+        <li>뚝섬한강공원</li>
+        <li>서울특별시 광진구 강변북로 139</li>
+    </ul>
+    <div class="img_margin">
+        <img src = "img/map.jpg" width="1500">
+    </div>
+
+    <h2>5. 관람 유의 사항</h2>
+    <ul class="dron_icon">
+        <li>4.19(토) | 스페셜 드론쇼(2,000대)로 진행됩니다.</li>
+        <li>우천, 강풍 등 기상상황에 따라 공연이 취소 또는 지연 될 수 있습니다.</li>
+    </ul>
+</body>
+</html>

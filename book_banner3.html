@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>전체 선택자 이용해서 마진과 패딩 초기화 후 지정</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    h3 {
+        margin: 20px 0 0 10px;
+    }
+
+    ul {
+        margin: 10px 0 0 30px;
+		list-style-type: none ;
+    }
+
+    li {
+        margin-top: 2px;
+    }
+
+    #menu {
+        font-family: "맑은 고딕";
+        width: 1600px;
+        padding: 10px;
+        margin: 20px 0 0 20px;
+        background-color: #eeeeee;
+        border: solid 1px #aaaaaa;
+        text-align: center;
+    }
+
+    #menu li{
+        display: inline;
+    }  
+
+	#banner {
+	    width:458px;
+	    height:672px;
+        margin: 20px 0 0 10px;
+	    background-image:url("img/banner_bg.jpg");
+	    border:solid 1px #cccccc;
+	}
+
+	#banner img {
+	margin:320px 0 0 17px;
+	}
+</style>
+</head>
+<body>
+	<ul id="menu">
+        <li><a href="index.html">드론라이트쇼 소개 페이지</a> : </li>
+        <li><a href="book_banner1.html">마진과 패딩 기본값 이용</a> : </li>
+        <li><a href="book_banner3.html">마진과 패딩 초기화 후 지정</a> : </li>
+        <li><a href="inline_block.html">인라인과 블록 방식으로 디스플레이</a> : </li>
+        <li><a href="h_menu.html">메뉴를 수평 방향으로 나열</a> : </li>
+        <li><a href="v_menu.html">메뉴를 수직 방향으로 나열</a> : </li>
+        <li><a href="boxes.html">인라인과 블록 특성 모두 갖게 하기</a></li>
+    </ul>
+
+	<h3>녹나무의 파수꾼 책 소개</h3>
+	<ul>
+		<li>저자 : 히가시고 게이고</li>
+		<li>출판사 : 소미 미디어</li>
+		<li>가격 : 16000원</li>
+	</ul>
+	<div id = "banner">
+		<img src = "img/buy.png" width="420">
+	</div>
+</body>
+</html>
